@@ -2,35 +2,347 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>TopTrend Picks</title>
-  <link rel="stylesheet" href="style.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>TopTrend Picks - Best Products & Deals</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0; padding: 0;
+      background: #f9f9f9;
+      color: #333;
+    }
+    header {
+      background-color: #222;
+      color: white;
+      padding: 20px 0;
+      text-align: center;
+    }
+    nav {
+      background: #444;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      padding: 15px 20px;
+      display: block;
+      transition: background 0.3s;
+    }
+    nav a:hover {
+      background: #666;
+    }
+    main {
+      max-width: 1200px;
+      margin: 20px auto;
+      padding: 0 15px;
+    }
+    section.category {
+      margin-bottom: 40px;
+    }
+    section.category h2 {
+      border-bottom: 3px solid #007acc;
+      padding-bottom: 8px;
+      margin-bottom: 20px;
+    }
+    .products {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+    .product {
+      background: white;
+      border-radius: 6px;
+      box-shadow: 0 0 8px rgba(0,0,0,0.1);
+      padding: 15px;
+      width: calc(33% - 20px);
+      box-sizing: border-box;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+    .product img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 4px;
+      margin-bottom: 10px;
+    }
+    .product h3 {
+      font-size: 1.1em;
+      margin: 10px 0 8px;
+      color: #007acc;
+    }
+    .product p {
+      font-size: 0.9em;
+      flex-grow: 1;
+      margin-bottom: 12px;
+      color: #555;
+    }
+    .product a {
+      background: #007acc;
+      color: white;
+      padding: 10px 15px;
+      text-decoration: none;
+      border-radius: 4px;
+      transition: background 0.3s;
+    }
+    .product a:hover {
+      background: #005fa3;
+    }
+    @media (max-width: 900px) {
+      .product {
+        width: calc(50% - 20px);
+      }
+    }
+    @media (max-width: 600px) {
+      .product {
+        width: 100%;
+      }
+      nav {
+        flex-direction: column;
+        align-items: center;
+      }
+      nav a {
+        padding: 10px 15px;
+      }
+    }
+  </style>
 </head>
 <body>
-  <header class="hero">
-    <img src="banner.png" alt="TopTrend Picks Banner" class="banner">
-    <h1>Welcome to TopTrend Picks</h1>
-    <p>Your ultimate source for top-rated electronics, fashion, health, tools, and gaming gear.</p>
-  </header>
-  <main>
-    <section class="categories">
-      <h2>Shop by Category</h2>
-      <ul>
-        <li><a href="products.html#electronics">🔌 Electronics</a></li>
-        <li><a href="products.html#fashion">👗 Fashion</a></li>
-        <li><a href="products.html#health">💊 Health</a></li>
-        <li><a href="products.html#tools">🛠️ Tools</a></li>
-        <li><a href="products.html#gaming">🎮 Gaming & Tech</a></li>
-      </ul>
-    </section>
-  </main>
-  <footer>
-    <p>&copy; 2025 TopTrend Picks</p>
-    <nav>
-      <a href="about.html">About</a> | 
-      <a href="contact.html">Contact</a> | 
-      <a href="privacy.html">Privacy Policy</a>
-    </nav>
-  </footer>
+
+<header>
+  <h1>TopTrend Picks</h1>
+  <p>Your Go-To Hub for Best Electronics, Fashion, Health & More</p>
+</header>
+
+<nav>
+  <a href="#electronics">Electronics</a>
+  <a href="#fashion">Fashion</a>
+  <a href="#health">Health</a>
+  <a href="#tools">Tools</a>
+  <a href="#gaming">Gaming</a>
+  <a href="#tech">Tech</a>
+  <a href="#home-kitchen">Home & Kitchen</a>
+  <a href="#outdoor-garden">Outdoor & Garden</a>
+  <a href="#beauty">Beauty & Personal Care</a>
+  <a href="#baby-kids">Baby & Kids</a>
+  <a href="#sports-fitness">Sports & Fitness</a>
+</nav>
+
+<main>
+
+  <!-- Electronics -->
+  <section id="electronics" class="category">
+    <h2>Electronics</h2>
+    <div class="products">
+      <div class="product">
+        <img src="https://m.media-amazon.com/images/I/61jLiCovyHL._AC_SL1500_.jpg" alt="Wireless Bluetooth Headphones" />
+        <h3>Wireless Bluetooth Headphones</h3>
+        <p>Enjoy crystal-clear sound with noise cancellation and comfortable ear pads for long listening sessions.</p>
+        <a href="https://www.amazon.com/dp/B07PZR3PVB?tag=youraffiliatetag" target="_blank" rel="nofollow noopener">Buy Now</a>
+      </div>
+      <div class="product">
+        <img src="https://m.media-amazon.com/images/I/71LXvFu10-L._AC_SL1500_.jpg" alt="Portable Power Bank" />
+        <h3>10000mAh Portable Power Bank</h3>
+        <p>Keep your devices charged on the go with this compact and fast-charging power bank.</p>
+        <a href="https://www.amazon.com/dp/B07D29QNMH?tag=youraffiliatetag" target="_blank" rel="nofollow noopener">Buy Now</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Fashion -->
+  <section id="fashion" class="category">
+    <h2>Fashion</h2>
+    <div class="products">
+      <div class="product">
+        <img src="https://m.media-amazon.com/images/I/71o8Q5XJS5L._AC_UX679_.jpg" alt="Men's Casual Sneakers" />
+        <h3>Men's Casual Sneakers</h3>
+        <p>Stylish and comfortable sneakers suitable for everyday wear with durable soles.</p>
+        <a href="https://www.amazon.com/dp/B07Z5HYQZ4?tag=youraffiliatetag" target="_blank" rel="nofollow noopener">Buy Now</a>
+      </div>
+      <div class="product">
+        <img src="https://m.media-amazon.com/images/I/61KPYtEZXfL._AC_UX679_.jpg" alt="Women's Summer Dress" />
+        <h3>Women's Summer Dress</h3>
+        <p>Lightweight, breathable fabric with a flattering fit perfect for warm weather.</p>
+        <a href="https://www.amazon.com/dp/B07Y2L9GXC?tag=youraffiliatetag" target="_blank" rel="nofollow noopener">Buy Now</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Health -->
+  <section id="health" class="category">
+    <h2>Health</h2>
+    <div class="products">
+      <div class="product">
+        <img src="https://m.media-amazon.com/images/I/61vg7KZiqUL._AC_SL1500_.jpg" alt="Electric Massage Gun" />
+        <h3>Electric Deep Tissue Massage Gun</h3>
+        <p>Relieve muscle stiffness and soreness with adjustable speed and multiple massage heads.</p>
+        <a href="https://www.amazon.com/dp/B07VLZXV65?tag=youraffiliatetag" target="_blank" rel="nofollow noopener">Buy Now</a>
+      </div>
+      <div class="product">
+        <img src="https://m.media-amazon.com/images/I/71QHmg8d5BL._AC_SL1500_.jpg" alt="Fitness Tracker Watch" />
+        <h3>Waterproof Fitness Tracker Watch</h3>
+        <p>Track your heart rate, steps, sleep, and calories burned with this sleek smartwatch.</p>
+        <a href="https://www.amazon.com/dp/B07S863ZXD?tag=youraffiliatetag" target="_blank" rel="nofollow noopener">Buy Now</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Tools -->
+  <section id="tools" class="category">
+    <h2>Tools</h2>
+    <div class="products">
+      <div class="product">
+        <img src="https://m.media-amazon.com/images/I/71kpwXuvJwL._AC_SL1500_.jpg" alt="Cordless Drill" />
+        <h3>18V Cordless Drill</h3>
+        <p>Powerful and lightweight drill with lithium-ion battery for all your DIY projects.</p>
+        <a href="https://www.amazon.com/dp/B07F4VL8QN?tag=youraffiliatetag" target="_blank" rel="nofollow noopener">Buy Now</a>
+      </div>
+      <div class="product">
+        <img src="https://m.media-amazon.com/images/I/71w5UZ6vQ-L._AC_SL1500_.jpg" alt="Multi-Tool Kit" />
+        <h3>Multi-Tool Kit with Case</h3>
+        <p>Includes pliers, screwdrivers, and more in a durable carrying case for easy transport.</p>
+        <a href="https://www.amazon.com/dp/B07H8VQJMP?tag=youraffiliatetag" target="_blank" rel="nofollow noopener">Buy Now</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Gaming -->
+  <section id="gaming" class="category">
+    <h2>Gaming</h2>
+    <div class="products">
+      <div class="product">
+        <img src="https://m.media-amazon.com/images/I/71eGxQsT6WL._AC_SL1500_.jpg" alt="Gaming Headset" />
+        <h3>Surround Sound Gaming Headset</h3>
+        <p>High-quality audio with noise-canceling microphone for immersive multiplayer gaming.</p>
+        <a href="https://www.amazon.com/dp/B07YDY92L3?tag=youraffiliatetag" target="_blank" rel="nofollow noopener">Buy Now</a>
+      </div>
+      <div class="product">
+        <img src="https://m.media-amazon.com/images/I/81rjbTUbZBL._AC_SL1500_.jpg" alt="Gaming Keyboard" />
+        <h3>RGB Mechanical Gaming Keyboard</h3>
+        <p>Durable keys with customizable lighting and anti-ghosting for competitive play.</p>
+        <a href="https://www.amazon.com/dp/B07WTH8P3W?tag=youraffiliatetag" target="_blank" rel="nofollow noopener">Buy Now</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Tech -->
+  <section id="tech" class="category">
+    <h2>Tech</h2>
+    <div class="products">
+      <div class="product">
+        <img src="https://m.media-amazon.com/images/I/71rqKLyX2hL._AC_SL1500_.jpg" alt="Smart Home Hub" />
+        <h3>Smart Home Hub with Voice Control</h3>
+        <p>Control your smart devices with ease and create automated routines for your home.</p>
+        <a href="https://www.amazon.com/dp/B07ZV25TMS?tag=youraffiliatetag" target="_blank" rel="nofollow noopener">Buy Now</a>
+      </div>
+      <div class="product">
+        <img src="https://m.media-amazon.com/images/I/71T8ZcKGU7L._AC_SL1500_.jpg" alt="Wireless Charging Pad" />
+        <h3>Fast Wireless Charging Pad</h3>
+        <p>Charge compatible smartphones quickly and safely without messy cables.</p>
+        <a href="https://www.amazon.com/dp/B07W7T8DP4?tag=youraffiliatetag" target="_blank" rel="nofollow noopener">Buy Now</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Home & Kitchen -->
+  <section id="home-kitchen" class="category">
+    <h2>Home & Kitchen</h2>
+    <div class="products">
+      <div class="product">
+        <img src="https://m.media-amazon.com/images/I/81y-Y97wjuL._AC_SL1500_.jpg" alt="Air Fryer" />
+        <h3>Digital Air Fryer 5.8 Quart</h3>
+        <p>Cook healthier meals with little to no oil using this versatile and easy-to-clean air fryer.</p>
+        <a href="https://www.amazon.com/dp/B07GJBBGHG?tag=youraffiliatetag" target="_blank" rel="nofollow noopener">Buy Now</a>
+      </div>
+      <div class="product">
+        <img src="https://m.media-amazon.com/images/I/71SbMM08Z-L._AC_SL1500_.jpg" alt="Robot Vacuum Cleaner" />
+        <h3>Robot Vacuum Cleaner with WiFi</h3>
+        <p>Smart robot vacuum that cleans floors automatically and can be controlled via smartphone.</p>
+        <a href="https://www.amazon.com/dp/B07VJYZF85?tag=youraffiliatetag" target="_blank" rel="nofollow noopener">Buy Now</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Outdoor & Garden -->
+  <section id="outdoor-garden" class="category">
+    <h2>Outdoor & Garden</h2>
+    <div class="products">
+      <div class="product">
+        <img src="https://m.media-amazon.com/images/I/71ZzJxkQfPL._AC_SL1500_.jpg" alt="Cordless Lawn Mower" />
+        <h3>Rechargeable Cordless Lawn Mower</h3>
+        <p>Quiet, eco-friendly mower with adjustable height and easy maneuverability.</p>
+        <a href="https://www.amazon.com/dp/B07F7RBHV9?tag=youraffiliatetag" target="_blank" rel="nofollow noopener">Buy Now</a>
+      </div>
+      <div class="product">
+        <img src="https://m.media-amazon.com/images/I/71nV1u8uJIL._AC_SL1500_.jpg" alt="Garden Tool Set" />
+        <h3>12-Piece Garden Tool Set</h3>
+        <p>Durable stainless steel gardening tools with ergonomic handles for comfortable use.</p>
+        <a href="https://www.amazon.com/dp/B07S2K5R5F?tag=youraffiliatetag" target="_blank" rel="nofollow noopener">Buy Now</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Beauty & Personal Care -->
+  <section id="beauty" class="category">
+    <h2>Beauty & Personal Care</h2>
+    <div class="products">
+      <div class="product">
+        <img src="https://m.media-amazon.com/images/I/61U7O2mjL-L._AC_SL1500_.jpg" alt="Electric Hair Straightener" />
+        <h3>Professional Electric Hair Straightener</h3>
+        <p>Fast heating ceramic plates for smooth, shiny hair with adjustable temperature control.</p>
+        <a href="https://www.amazon.com/dp/B07H5H62RR?tag=youraffiliatetag" target="_blank" rel="nofollow noopener">Buy Now</a>
+      </div>
+      <div class="product">
+        <img src="https://m.media-amazon.com/images/I/81K3JtU0HtL._AC_SL1500_.jpg" alt="Facial Cleansing Brush" />
+        <h3>Rechargeable Facial Cleansing Brush</h3>
+        <p>Gentle, deep-cleaning brush that removes dirt and makeup, promoting glowing skin.</p>
+        <a href="https://www.amazon.com/dp/B079H5W3WJ?tag=youraffiliatetag" target="_blank" rel="nofollow noopener">Buy Now</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Baby & Kids -->
+  <section id="baby-kids" class="category">
+    <h2>Baby & Kids</h2>
+    <div class="products">
+      <div class="product">
+        <img src="https://m.media-amazon.com/images/I/71jBBXFxG9L._AC_SL1500_.jpg" alt="Baby Stroller" />
+        <h3>Lightweight Baby Stroller</h3>
+        <p>Compact and foldable stroller with comfortable seating and adjustable canopy.</p>
+        <a href="https://www.amazon.com/dp/B07P6D2VFS?tag=youraffiliatetag" target="_blank" rel="nofollow noopener">Buy Now</a>
+      </div>
+      <div class="product">
+        <img src="https://m.media-amazon.com/images/I/81wS9T8-6VL._AC_SL1500_.jpg" alt="Educational Kids Tablet" />
+        <h3>Educational Tablet for Kids</h3>
+        <p>Interactive learning tablet with preloaded educational games and parental controls.</p>
+        <a href="https://www.amazon.com/dp/B07B8W2YKQ?tag=youraffiliatetag" target="_blank" rel="nofollow noopener">Buy Now</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sports & Fitness -->
+  <section id="sports-fitness" class="category">
+    <h2>Sports & Fitness</h2>
+    <div class="products">
+      <div class="product">
+        <img src="https://m.media-amazon.com/images/I/71-v0+Q10FL._AC_SL1500_.jpg" alt="Yoga Mat" />
+        <h3>Eco-Friendly Non-Slip Yoga Mat</h3>
+        <p>Durable and comfortable mat with extra cushioning, perfect for yoga and workouts.</p>
+        <a href="https://www.amazon.com/dp/B07FYM8YT8?tag=youraffiliatetag" target="_blank" rel="nofollow noopener">Buy Now</a>
+      </div>
+      <div class="product">
+        <img src="https://m.media-amazon.com/images/I/71cJUWiTwPL._AC_SL1500_.jpg" alt="Adjustable Dumbbells" />
+        <h3>Adjustable Dumbbell Set</h3>
+        <p>Space-saving weights with quick adjustment for various strength levels and exercises.</p>
+        <a href="https://www.amazon.com/dp/B07ZQW9LQJ?tag=youraffiliatetag" target="_blank" rel="nofollow noopener">Buy Now</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
 </body>
 </html>
