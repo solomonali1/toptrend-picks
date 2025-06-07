@@ -1,0 +1,33 @@
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background: #f8f9fa;
+  color: #333;
+}
+.hero {
+  background: #111;
+  color: #fff;
+  text-align: center;
+  padding: 2rem;
+}
+.categories {
+  padding: 1rem 2rem;
+}
+.categories ul {
+  list-style: none;
+  padding: 0;
+}
+.categories li {
+  margin: 0.5rem 0;
+}
+footer {
+  background: #222;
+  color: #ddd;
+  text-align: center;
+  padding: 1rem;
+}
+.banner {
+  max-width: 100%;
+  height: auto;
+}
